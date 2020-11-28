@@ -1,0 +1,2 @@
+# StarLight_ErfanGSI_Audo-in-Github
+基于Github Actions制作的自动跑ErfanGSI的脚本，fork这个仓库
