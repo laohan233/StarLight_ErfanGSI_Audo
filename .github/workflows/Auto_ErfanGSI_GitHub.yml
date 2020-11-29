@@ -51,7 +51,7 @@ jobs:
               sudo sed -i '7c AB=true' url2GSI.sh
               sudo sed -i '8c Aonly=false' url2GSI.sh
        - name: Download Rom/下载ROM & Generate A/B GSI/制作A/B ErfanGSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME AB
+         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME 
        
        - name: ZIP GSI /打包GSI
          run: |
@@ -62,5 +62,4 @@ jobs:
          run: |
               curl -sL https://git.io/file-transfer | sh
               ./transfer wet final/GSI_Auto_Github-Actions.zip
-              
-       - name: 已上传完毕，在Download Link的链接就下载
+            
