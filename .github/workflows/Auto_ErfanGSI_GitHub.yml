@@ -51,7 +51,7 @@ jobs:
               sudo sed -i '7c AB=true' url2GSI.sh
               sudo sed -i '8c Aonly=false' url2GSI.sh
        - name: Download Rom/下载ROM & Generate A/B GSI/制作A/B ErfanGSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
+         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME AB
        
        - name: ZIP GSI /打包GSI
          run: |
